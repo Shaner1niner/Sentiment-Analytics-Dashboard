@@ -1,0 +1,10 @@
+date,asset,source,sentiment_score,sentiment_label,mention_count,engagement_score,attention_bucket
+2026-01-01,BTC,reddit,0.42,positive,185,74.3,high
+2026-01-01,ETH,reddit,0.31,positive,142,61.5,medium
+2026-01-01,META,news,0.18,neutral_positive,96,48.2,medium
+2026-01-02,BTC,reddit,0.27,positive,171,69.8,high
+2026-01-02,ETH,reddit,-0.08,neutral_negative,128,55.1,medium
+2026-01-02,META,news,0.24,positive,104,50.6,medium
+2026-01-03,BTC,reddit,-0.14,negative,210,82.4,high
+2026-01-03,ETH,reddit,0.05,neutral,118,42.7,medium
+2026-01-03,META,news,0.36,positive,121,58.9,medium
