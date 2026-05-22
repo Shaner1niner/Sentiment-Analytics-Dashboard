@@ -6,6 +6,13 @@ This repo is the public showcase layer of a larger private SETA analytics system
 
 ![Sentiment Analytics Dashboard architecture](assets/public_architecture_overview.svg)
 
+
+## Dashboard preview
+
+![SETA Public Dashboard overview](screenshots/dashboard_overview_public.png)
+
+This dashboard view shows the public-facing SETA interface: asset controls, Market Radar, narrative briefing cards, structure score, signal state, and sentiment-enhanced technical charting.
+
 ## 60-second overview
 
 **What it is:** a sentiment analytics dashboard portfolio for explaining market narrative and engagement patterns.
