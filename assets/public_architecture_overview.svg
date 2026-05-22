@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Sentiment Analytics Dashboard Public Architecture</title>
+  <desc id="desc">A public portfolio architecture diagram showing private engines feeding dashboard-ready outputs and public portfolio assets.</desc>
+  <rect width="1200" height="675" rx="28" fill="#0f172a"/>
+  <text x="60" y="72" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Sentiment Analytics Dashboard</text>
+  <text x="60" y="108" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="18">Public portfolio layer for a private sentiment, attention, and market-context analytics system</text>
+
+  <rect x="55" y="145" width="330" height="370" rx="20" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="80" y="185" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Private engines</text>
+  <text x="80" y="220" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="16">Protected implementation layer</text>
+  <rect x="85" y="250" width="250" height="48" rx="12" fill="#1e293b"/>
+  <text x="105" y="280" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="15">SETA analytics engine</text>
+  <rect x="85" y="315" width="250" height="48" rx="12" fill="#1e293b"/>
+  <text x="105" y="345" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="15">Prediction intelligence layer</text>
+  <rect x="85" y="380" width="250" height="48" rx="12" fill="#1e293b"/>
+  <text x="105" y="410" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="15">Validation and governance</text>
+  <text x="80" y="470" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14">Not public: source adapters, scoring</text>
+  <text x="80" y="492" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14">internals, credentials, model code,</text>
+  <text x="80" y="514" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14">production data, orchestration.</text>
+
+  <rect x="455" y="220" width="290" height="220" rx="20" fill="#172554" stroke="#3b82f6" stroke-width="2"/>
+  <text x="485" y="265" fill="#eff6ff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Dashboard-ready outputs</text>
+  <text x="485" y="302" fill="#bfdbfe" font-family="Arial, Helvetica, sans-serif" font-size="16">Stable, reviewed handoff layer</text>
+  <text x="485" y="344" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="15">- sentiment state</text>
+  <text x="485" y="370" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="15">- attention state</text>
+  <text x="485" y="396" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="15">- context labels</text>
+  <text x="485" y="422" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="15">- confidence and review status</text>
+
+  <rect x="815" y="145" width="330" height="370" rx="20" fill="#052e16" stroke="#22c55e" stroke-width="2"/>
+  <text x="845" y="185" fill="#f0fdf4" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Public portfolio</text>
+  <text x="845" y="220" fill="#bbf7d0" font-family="Arial, Helvetica, sans-serif" font-size="16">Recruiter-safe showcase layer</text>
+  <rect x="845" y="250" width="250" height="48" rx="12" fill="#064e3b"/>
+  <text x="865" y="280" fill="#dcfce7" font-family="Arial, Helvetica, sans-serif" font-size="15">Case study and README</text>
+  <rect x="845" y="315" width="250" height="48" rx="12" fill="#064e3b"/>
+  <text x="865" y="345" fill="#dcfce7" font-family="Arial, Helvetica, sans-serif" font-size="15">Sample data and SQL</text>
+  <rect x="845" y="380" width="250" height="48" rx="12" fill="#064e3b"/>
+  <text x="865" y="410" fill="#dcfce7" font-family="Arial, Helvetica, sans-serif" font-size="15">Tableau notes and visuals</text>
+  <text x="845" y="470" fill="#86efac" font-family="Arial, Helvetica, sans-serif" font-size="14">Public: what it does, why it matters,</text>
+  <text x="845" y="492" fill="#86efac" font-family="Arial, Helvetica, sans-serif" font-size="14">how outputs are interpreted, and</text>
+  <text x="845" y="514" fill="#86efac" font-family="Arial, Helvetica, sans-serif" font-size="14">how private IP stays protected.</text>
+
+  <path d="M390 330 H445" stroke="#93c5fd" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M750 330 H805" stroke="#86efac" stroke-width="4" fill="none" marker-end="url(#arrowGreen)"/>
+
+  <text x="60" y="590" fill="#e2e8f0" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Design principle</text>
+  <text x="60" y="625" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="18">The public repo shows the what, why, and dashboard-facing outputs. The private repos keep the how.</text>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#93c5fd"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#86efac"/>
+    </marker>
+  </defs>
+</svg>
