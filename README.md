@@ -1,60 +1,116 @@
 # Sentiment Analytics Dashboard
 
-A public portfolio showcase for a sentiment-driven financial analytics dashboard. This repository is designed for recruiters, hiring managers, and professional reviewers who want to understand the project at the product, analytics, reporting, and governance layer while keeping the private SETA engines protected.
+A recruiter-friendly portfolio case study showing how social sentiment, public attention, market context, SQL reporting, and Tableau-style dashboards can be organized into a clear analytics product.
 
-## What this repository demonstrates
+This repo is the public showcase layer of a larger private SETA analytics system. It is designed to be understandable in a few minutes without exposing the private engines, source adapters, scoring internals, model code, or production data.
 
-This repo highlights how social sentiment, engagement behavior, model validation concepts, and market-related data can be organized into clean dashboard-ready reporting assets using Tableau, SQL, Python, and PostgreSQL-style data modeling.
+## 60-second overview
 
-It is intentionally curated to show:
+**What it is:** a sentiment analytics dashboard portfolio for explaining market narrative and engagement patterns.
 
-- dashboard design and analytical storytelling
-- sentiment and engagement reporting concepts
-- sanitized sample data structures
-- Tableau calculation notes
-- SQL reporting examples
-- architecture documentation
-- recruiter-friendly project positioning
-- model validation and dashboard handoff concepts
-- public/private engineering judgment
+**Why it matters:** public discussion around financial assets is noisy. This project shows how sentiment, attention, and market context can be structured into repeatable reporting outputs instead of scattered commentary.
 
-## Quick links
+**What I built:** the public-facing portfolio layer: dashboard methodology, sample reporting data, SQL examples, Tableau calculation notes, architecture documentation, model-validation concepts, and public/private repo boundaries.
 
-- [Project portfolio case study](docs/project_portfolio_case_study.md)
-- [Public architecture diagram](architecture/public_architecture_diagram.md)
-- [Recruiter talking points](docs/recruiter_talking_points.md)
-- [Dashboard methodology](docs/dashboard_methodology.md)
-- [Private engine boundary](docs/private_engine_boundary.md)
-- [Prediction intelligence public summary](docs/prediction_intelligence_public_summary.md)
-- [Screenshot capture guide](screenshots/README.md)
+**Who it is for:** recruiters, hiring managers, finance/accounting leaders, analytics managers, and technical reviewers.
 
-## What is intentionally excluded
+**Main takeaway:** this project demonstrates data storytelling, SQL reporting, dashboard design, analytics governance, and product judgment around what should be public versus private.
 
-The production SETA engines are not included here. Private or proprietary components remain outside this public showcase, including:
+## Tech stack represented
 
-- production ingestion pipelines
-- API integrations and credentials
-- orchestration logic
-- proprietary weighting methodology
-- live database connections
-- private deployment configuration
-- raw production data
+| Area | Tools / concepts |
+| --- | --- |
+| Analytics workflow | Python, structured pipeline design, feature and output contracts |
+| Data layer | SQL, PostgreSQL-style reporting tables, sanitized sample data |
+| Visualization | Tableau-oriented calculated fields, dashboard design, context cards |
+| Modeling governance | validation concepts, confidence bands, challenger evaluation, freshness checks |
+| Communication | public-safe summaries, recruiter-facing documentation, architecture diagrams |
+
+## Visual showcase
+
+Screenshots are the next highest-impact addition. They should be added only after public-safety review.
+
+Planned visual assets:
+
+- dashboard overview
+- market tape or context panel
+- briefing/context card example
+- chart guide or methodology panel
+- architecture diagram
+
+See [`screenshots/README.md`](screenshots/README.md) for the capture checklist.
+
+## Architecture at a glance
+
+```mermaid
+flowchart LR
+    A[Private data and analytics engines] --> B[Dashboard-ready outputs]
+    B --> C[Sentiment dashboard working layer]
+    B --> D[Public portfolio repo]
+
+    D --> E[Case study]
+    D --> F[Architecture diagram]
+    D --> G[Sample data]
+    D --> H[SQL and Tableau examples]
+
+    A -. protected .-> I[Private code, credentials, scoring internals, production data]
+```
+
+The design principle is simple:
+
+> The public repo shows the what, why, and dashboard-facing outputs. The private repos keep the how.
+
+## Best first read
+
+For an external reviewer, start here:
+
+1. [`docs/project_portfolio_case_study.md`](docs/project_portfolio_case_study.md) - full case-study narrative
+2. [`architecture/public_architecture_diagram.md`](architecture/public_architecture_diagram.md) - architecture and public/private boundary
+3. [`docs/recruiter_talking_points.md`](docs/recruiter_talking_points.md) - resume/interview positioning
+4. [`sample_data/`](sample_data/) and [`sql_examples/`](sql_examples/) - sanitized examples
+5. [`tableau_notes/calculated_fields.md`](tableau_notes/calculated_fields.md) - dashboard implementation notes
+
+## What is public here
+
+This repository includes:
+
+- a polished portfolio case study
+- public-safe architecture documentation
+- sanitized sample CSVs
+- simplified SQL reporting examples
+- Tableau calculated-field notes
+- model-validation and dashboard handoff concepts
+- recruiter-facing talking points
+
+## What stays private
+
+The production SETA engines are intentionally not included. Protected components include:
+
+- ingestion and source-adapter code
+- credentials and connection details
+- orchestration and scheduler logic
+- proprietary scoring and weighting internals
+- production database structures
 - model training code and artifacts
-- ensemble selection logic
-- monetization or member-only infrastructure
+- live data and commercial workflow details
 
-This repository is the showroom, not the machine.
+## Relationship to the broader project
 
-## Public safety and use policy
+This public repo is a companion to the broader SETA system.
 
-This project is educational and analytical. It presents dashboard context and portfolio documentation only. It is not a personalized recommendation system.
+- `sentiment-dash` is the working dashboard source.
+- `SETA_engine` is the private analytics and data-quality layer.
+- `SETA_Prediction_Intelligence_Engine` is the private model-validation and dashboard-context layer.
+- `Sentiment-Analytics-Dashboard` is the polished public portfolio layer.
 
-## Repository layout
+## Repository map
+
+<details>
+<summary>View full repository structure</summary>
 
 ```text
 Sentiment-Analytics-Dashboard/
 ├── README.md
-├── .gitignore
 ├── architecture/
 │   ├── public_architecture_diagram.md
 │   └── public_portfolio_architecture.md
@@ -82,39 +138,8 @@ Sentiment-Analytics-Dashboard/
     └── calculated_fields.md
 ```
 
-## Relationship to `sentiment-dash`
+</details>
 
-The existing `sentiment-dash` repository is the current public-facing working dashboard source. This portfolio repo is a cleaner, recruiter-facing companion repo. It selectively documents the dashboard concept, reporting model, sample data, and safe excerpts without copying over production-sensitive workflows.
+## Professional summary
 
-## Relationship to the private SETA engines
-
-The private SETA engine is the analytics and data-quality layer behind the broader project. The private SETA Prediction Intelligence Engine is the model validation and dashboard-context layer. This public repository summarizes both at a conceptual level while keeping production code, source adapters, model internals, database details, and commercial infrastructure private.
-
-Useful docs:
-
-- `docs/seta_engine_public_summary.md`
-- `docs/prediction_intelligence_public_summary.md`
-- `docs/private_engine_boundary.md`
-- `docs/model_validation_principles.md`
-- `docs/dashboard_handoff_contract_concept.md`
-
-## Suggested reviewer path
-
-1. Start with `docs/project_portfolio_case_study.md` for the full portfolio narrative.
-2. Open `docs/recruiter_talking_points.md` for the professional summary.
-3. Review `architecture/public_architecture_diagram.md` for the visual architecture overview.
-4. Review `architecture/public_portfolio_architecture.md` for the system explanation.
-5. Open `docs/seta_engine_public_summary.md` for the private analytics-engine summary.
-6. Open `docs/prediction_intelligence_public_summary.md` for the private modeling-layer summary.
-7. Open `docs/private_engine_boundary.md` to understand what is intentionally protected.
-8. Open `docs/dashboard_methodology.md` for the analytical framework.
-9. Inspect `sample_data/` and `sql_examples/` for sanitized reporting examples.
-10. Review `tableau_notes/calculated_fields.md` for dashboard implementation logic.
-
-## Screenshot status
-
-Screenshots are tracked in GitHub issue #1. The repo includes a screenshot capture guide at `screenshots/README.md`; actual screenshots should be added only after public-safety review.
-
-## Core professional narrative
-
-This project demonstrates the ability to combine accounting discipline, data engineering judgment, SQL reporting, dashboard design, financial analytics, validation thinking, and public-safe communication into a clear decision-support system.
+This project demonstrates the ability to turn ambiguous, noisy, multi-source information into a structured reporting product. It combines accounting discipline, analytics engineering, SQL reporting, dashboard design, validation thinking, and clear communication for non-technical stakeholders.
