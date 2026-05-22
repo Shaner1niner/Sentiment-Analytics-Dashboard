@@ -50,6 +50,13 @@ Planned screenshot assets:
 
 See [`screenshots/README.md`](screenshots/README.md) for the capture checklist.
 
+
+### Mobile dashboard preview
+
+![SETA mobile dashboard preview](screenshots/mobile_dashboard_public.png)
+
+This mobile QA screenshot shows that the dashboard was reviewed for smaller-screen presentation, supporting the project’s broader goal of making sentiment analytics usable beyond a desktop-only workflow.
+
 ## Architecture at a glance
 
 ```mermaid
