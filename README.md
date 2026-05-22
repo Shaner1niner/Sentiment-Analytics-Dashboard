@@ -6,7 +6,6 @@ This repo is the public showcase layer of a larger private SETA analytics system
 
 ![Sentiment Analytics Dashboard architecture](assets/public_architecture_overview.svg)
 
-
 ## Dashboard preview
 
 ![SETA Public Dashboard overview](screenshots/dashboard_overview_public.png)
@@ -25,6 +24,12 @@ This dashboard view shows the public-facing SETA interface: asset controls, Mark
 
 **Main takeaway:** this project demonstrates data storytelling, SQL reporting, dashboard design, analytics governance, and product judgment around what should be public versus private.
 
+## Business value
+
+This project demonstrates how messy, unstructured information can be transformed into structured reporting outputs for dashboard users. The same workflow principles apply directly to accounting, finance, FP&A, revenue analytics, KPI reporting, and executive dashboards: collect scattered data, structure it, validate it, and present it clearly.
+
+For a business audience, the project is less about market prediction and more about decision-support design: turning noisy inputs into readable context, creating repeatable reporting layers, and separating public-facing summaries from private production systems.
+
 ## Tech stack represented
 
 | Area | Tools / concepts |
@@ -39,23 +44,15 @@ This dashboard view shows the public-facing SETA interface: asset controls, Mark
 
 The architecture visual above gives reviewers an immediate orientation to the public/private project boundary.
 
-Dashboard screenshots are the next highest-impact addition. They should be added only after public-safety review.
-
-Planned screenshot assets:
-
-- dashboard overview
-- market tape or context panel
-- briefing/context card example
-- chart guide or methodology panel
-
-See [`screenshots/README.md`](screenshots/README.md) for the capture checklist.
-
+Dashboard screenshots are reviewed before publication. The current repo includes a modern desktop dashboard preview and a mobile QA preview.
 
 ### Mobile dashboard preview
 
 ![SETA mobile dashboard preview](screenshots/mobile_dashboard_public.png)
 
-This mobile QA screenshot shows that the dashboard was reviewed for smaller-screen presentation, supporting the project�s broader goal of making sentiment analytics usable beyond a desktop-only workflow.
+This mobile QA screenshot shows that the dashboard was reviewed for smaller-screen presentation, supporting the project's broader goal of making sentiment analytics usable beyond a desktop-only workflow.
+
+Additional visual candidates, such as market context panels or earlier dashboard prototypes, are tracked in [`screenshots/README.md`](screenshots/README.md).
 
 ## Architecture at a glance
 
@@ -84,8 +81,9 @@ For an external reviewer, start here:
 1. [`docs/project_portfolio_case_study.md`](docs/project_portfolio_case_study.md) - full case-study narrative
 2. [`architecture/public_architecture_diagram.md`](architecture/public_architecture_diagram.md) - architecture and public/private boundary
 3. [`docs/recruiter_talking_points.md`](docs/recruiter_talking_points.md) - resume/interview positioning
-4. [`sample_data/`](sample_data/) and [`sql_examples/`](sql_examples/) - sanitized examples
-5. [`tableau_notes/calculated_fields.md`](tableau_notes/calculated_fields.md) - dashboard implementation notes
+4. [`docs/dashboard_visual_evolution.md`](docs/dashboard_visual_evolution.md) - visual development notes
+5. [`sample_data/`](sample_data/) and [`sql_examples/`](sql_examples/) - sanitized examples
+6. [`tableau_notes/calculated_fields.md`](tableau_notes/calculated_fields.md) - dashboard implementation notes
 
 ## What is public here
 
@@ -98,6 +96,7 @@ This repository includes:
 - Tableau calculated-field notes
 - model-validation and dashboard handoff concepts
 - recruiter-facing talking points
+- reviewed dashboard screenshots
 
 ## What stays private
 
@@ -127,35 +126,38 @@ This public repo is a companion to the broader SETA system.
 
 ```text
 Sentiment-Analytics-Dashboard/
-├── README.md
-├── assets/
-│   ├── README.md
-│   └── public_architecture_overview.svg
-├── architecture/
-│   ├── public_architecture_diagram.md
-│   └── public_portfolio_architecture.md
-├── docs/
-│   ├── analytics_framework_glossary.md
-│   ├── dashboard_handoff_contract_concept.md
-│   ├── dashboard_methodology.md
-│   ├── data_dictionary_sanitized.md
-│   ├── model_validation_principles.md
-│   ├── prediction_intelligence_public_summary.md
-│   ├── private_engine_boundary.md
-│   ├── project_portfolio_case_study.md
-│   ├── public_safe_output_contract.md
-│   ├── recruiter_talking_points.md
-│   ├── seta_engine_public_summary.md
-│   └── source_selection_log.md
-├── sample_data/
-│   ├── sample_asset_metrics.csv
-│   └── sample_sentiment_scores.csv
-├── screenshots/
-│   └── README.md
-├── sql_examples/
-│   └── sentiment_dashboard_rollup_sample.sql
-└── tableau_notes/
-    └── calculated_fields.md
+|-- README.md
+|-- assets/
+|   |-- README.md
+|   `-- public_architecture_overview.svg
+|-- architecture/
+|   |-- public_architecture_diagram.md
+|   `-- public_portfolio_architecture.md
+|-- docs/
+|   |-- analytics_framework_glossary.md
+|   |-- dashboard_handoff_contract_concept.md
+|   |-- dashboard_methodology.md
+|   |-- dashboard_visual_evolution.md
+|   |-- data_dictionary_sanitized.md
+|   |-- model_validation_principles.md
+|   |-- prediction_intelligence_public_summary.md
+|   |-- private_engine_boundary.md
+|   |-- project_portfolio_case_study.md
+|   |-- public_safe_output_contract.md
+|   |-- recruiter_talking_points.md
+|   |-- seta_engine_public_summary.md
+|   `-- source_selection_log.md
+|-- sample_data/
+|   |-- sample_asset_metrics.csv
+|   `-- sample_sentiment_scores.csv
+|-- screenshots/
+|   |-- README.md
+|   |-- dashboard_overview_public.png
+|   `-- mobile_dashboard_public.png
+|-- sql_examples/
+|   `-- sentiment_dashboard_rollup_sample.sql
+`-- tableau_notes/
+    `-- calculated_fields.md
 ```
 
 </details>
