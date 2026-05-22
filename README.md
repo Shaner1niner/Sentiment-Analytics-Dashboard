@@ -54,6 +54,13 @@ This mobile QA screenshot shows that the dashboard was reviewed for smaller-scre
 
 Additional visual candidates, such as market context panels or earlier dashboard prototypes, are tracked in [`screenshots/README.md`](screenshots/README.md).
 
+
+### Market context preview
+
+![SETA market context cards](screenshots/market_context_public.png)
+
+This market context view shows how the dashboard translates broader market conditions into public-safe explanatory cards, helping users interpret sentiment and attention within a larger market backdrop.
+
 ## Architecture at a glance
 
 ```mermaid
