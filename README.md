@@ -4,6 +4,8 @@ A recruiter-friendly portfolio case study showing how social sentiment, public a
 
 This repo is the public showcase layer of a larger private SETA analytics system. It is designed to be understandable in a few minutes without exposing the private engines, source adapters, scoring internals, model code, or production data.
 
+![Sentiment Analytics Dashboard architecture](assets/public_architecture_overview.svg)
+
 ## 60-second overview
 
 **What it is:** a sentiment analytics dashboard portfolio for explaining market narrative and engagement patterns.
@@ -28,15 +30,16 @@ This repo is the public showcase layer of a larger private SETA analytics system
 
 ## Visual showcase
 
-Screenshots are the next highest-impact addition. They should be added only after public-safety review.
+The architecture visual above gives reviewers an immediate orientation to the public/private project boundary.
 
-Planned visual assets:
+Dashboard screenshots are the next highest-impact addition. They should be added only after public-safety review.
+
+Planned screenshot assets:
 
 - dashboard overview
 - market tape or context panel
 - briefing/context card example
 - chart guide or methodology panel
-- architecture diagram
 
 See [`screenshots/README.md`](screenshots/README.md) for the capture checklist.
 
@@ -111,6 +114,9 @@ This public repo is a companion to the broader SETA system.
 ```text
 Sentiment-Analytics-Dashboard/
 ├── README.md
+├── assets/
+│   ├── README.md
+│   └── public_architecture_overview.svg
 ├── architecture/
 │   ├── public_architecture_diagram.md
 │   └── public_portfolio_architecture.md
