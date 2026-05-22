@@ -18,6 +18,16 @@ It is intentionally curated to show:
 - model validation and dashboard handoff concepts
 - public/private engineering judgment
 
+## Quick links
+
+- [Project portfolio case study](docs/project_portfolio_case_study.md)
+- [Public architecture diagram](architecture/public_architecture_diagram.md)
+- [Recruiter talking points](docs/recruiter_talking_points.md)
+- [Dashboard methodology](docs/dashboard_methodology.md)
+- [Private engine boundary](docs/private_engine_boundary.md)
+- [Prediction intelligence public summary](docs/prediction_intelligence_public_summary.md)
+- [Screenshot capture guide](screenshots/README.md)
+
 ## What is intentionally excluded
 
 The production SETA engines are not included here. Private or proprietary components remain outside this public showcase, including:
@@ -46,6 +56,7 @@ Sentiment-Analytics-Dashboard/
 ├── README.md
 ├── .gitignore
 ├── architecture/
+│   ├── public_architecture_diagram.md
 │   └── public_portfolio_architecture.md
 ├── docs/
 │   ├── analytics_framework_glossary.md
@@ -55,6 +66,7 @@ Sentiment-Analytics-Dashboard/
 │   ├── model_validation_principles.md
 │   ├── prediction_intelligence_public_summary.md
 │   ├── private_engine_boundary.md
+│   ├── project_portfolio_case_study.md
 │   ├── public_safe_output_contract.md
 │   ├── recruiter_talking_points.md
 │   ├── seta_engine_public_summary.md
@@ -62,6 +74,8 @@ Sentiment-Analytics-Dashboard/
 ├── sample_data/
 │   ├── sample_asset_metrics.csv
 │   └── sample_sentiment_scores.csv
+├── screenshots/
+│   └── README.md
 ├── sql_examples/
 │   └── sentiment_dashboard_rollup_sample.sql
 └── tableau_notes/
@@ -86,14 +100,20 @@ Useful docs:
 
 ## Suggested reviewer path
 
-1. Start with `docs/recruiter_talking_points.md` for the professional summary.
-2. Review `architecture/public_portfolio_architecture.md` for the system overview.
-3. Open `docs/seta_engine_public_summary.md` for the private analytics-engine summary.
-4. Open `docs/prediction_intelligence_public_summary.md` for the private modeling-layer summary.
-5. Open `docs/private_engine_boundary.md` to understand what is intentionally protected.
-6. Open `docs/dashboard_methodology.md` for the analytical framework.
-7. Inspect `sample_data/` and `sql_examples/` for sanitized reporting examples.
-8. Review `tableau_notes/calculated_fields.md` for dashboard implementation logic.
+1. Start with `docs/project_portfolio_case_study.md` for the full portfolio narrative.
+2. Open `docs/recruiter_talking_points.md` for the professional summary.
+3. Review `architecture/public_architecture_diagram.md` for the visual architecture overview.
+4. Review `architecture/public_portfolio_architecture.md` for the system explanation.
+5. Open `docs/seta_engine_public_summary.md` for the private analytics-engine summary.
+6. Open `docs/prediction_intelligence_public_summary.md` for the private modeling-layer summary.
+7. Open `docs/private_engine_boundary.md` to understand what is intentionally protected.
+8. Open `docs/dashboard_methodology.md` for the analytical framework.
+9. Inspect `sample_data/` and `sql_examples/` for sanitized reporting examples.
+10. Review `tableau_notes/calculated_fields.md` for dashboard implementation logic.
+
+## Screenshot status
+
+Screenshots are tracked in GitHub issue #1. The repo includes a screenshot capture guide at `screenshots/README.md`; actual screenshots should be added only after public-safety review.
 
 ## Core professional narrative
 
