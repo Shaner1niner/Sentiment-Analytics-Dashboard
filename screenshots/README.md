@@ -2,17 +2,24 @@
 
 This folder is reserved for recruiter-safe dashboard screenshots.
 
-No raw screenshots were copied automatically from the source repositories. Before adding any image here, each screenshot should be manually reviewed for public safety.
+No raw screenshots are copied automatically from the source repositories. Before adding any image here, each screenshot should be manually reviewed for public safety.
 
-## Recommended screenshots
+## Recommended primary screenshot
+
+| Target filename | Source view | Use |
+| --- | --- | --- |
+| `dashboard_overview_public.png` | New SETA Public Dashboard / NVDA briefing view | Primary README hero screenshot. This is the strongest external-facing visual because it shows the modern product surface: controls, Market Radar, asset briefing cards, structure score, signal state, and sentiment-enhanced technical charting in one view. |
+
+## Additional screenshot candidates
 
 | Target filename | Source view | Why it belongs |
 | --- | --- | --- |
-| `dashboard_overview_public.png` | `sentiment-dash/interactive_dashboard_fix24_public_embed.html` | Best high-level visual of the public dashboard, controls, chart area, and product surface. |
-| `market_tape_context.png` | Public dashboard Market Tape module | Shows dashboard product thinking beyond a single chart. |
-| `briefing_panel.png` | Public dashboard briefing module | Shows how analytics are translated into explanatory, public-safe context. |
-| `chart_guide_methodology.png` | Public dashboard chart guide | Explains methodology in a recruiter-friendly way. |
-| `public_context_cards.png` | `sentiment-dash/seta_public_context_cards.html` | Shows public-safe narrative/card output, useful for portfolio storytelling. |
+| `market_radar_context.png` | SETA Public Dashboard Market Radar panel | Shows cross-asset context and product thinking beyond a single chart. |
+| `asset_briefing_panel.png` | SETA Public Dashboard asset briefing module | Shows how analytics are translated into explanatory, public-safe context. |
+| `technical_chart_context.png` | SETA Public Dashboard chart section | Shows sentiment-enhanced technical visualization. |
+| `tableau_prototype_aapl.png` | Earlier AAPL Tableau-style dashboard | Shows project evolution and earlier dashboarding capability. |
+| `tableau_prototype_nvda.png` | Earlier NVDA Tableau-style dashboard | Shows asset-specific dashboard prototyping and visual iteration. |
+| `tableau_prototype_tsla.png` | Earlier TSLA Tableau-style dashboard | Optional archive/evolution screenshot; use only if framed as an earlier prototype. |
 
 ## Public-safety review checklist
 
@@ -40,14 +47,15 @@ Before adding a screenshot, confirm it contains no:
 ## Suggested README preview block
 
 ```md
-## Visual preview
+## Dashboard preview
 
-![Public dashboard overview](screenshots/dashboard_overview_public.png)
+![SETA Public Dashboard overview](screenshots/dashboard_overview_public.png)
 
-Additional screenshots:
+This dashboard view shows the public-facing SETA interface: asset controls, Market Radar, narrative briefing cards, structure score, signal state, and sentiment-enhanced technical charting.
 
-- [Market Tape context](screenshots/market_tape_context.png)
-- [Briefing panel](screenshots/briefing_panel.png)
-- [Chart guide methodology](screenshots/chart_guide_methodology.png)
-- [Public context cards](screenshots/public_context_cards.png)
+Additional prototype views are included to show the project’s evolution from earlier Tableau-style dashboards into the current SETA public dashboard format.
 ```
+
+## Notes on source repo QA assets
+
+The `sentiment-dash` source repository includes a `qa_outputs/` folder and generated dashboard assets. Candidate screenshots from that folder should be reviewed before being copied into this public portfolio repo.
