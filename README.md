@@ -173,3 +173,13 @@ Sentiment-Analytics-Dashboard/
 ## Professional summary
 
 This project demonstrates the ability to turn ambiguous, noisy, multi-source information into a structured reporting product. It combines accounting discipline, analytics engineering, SQL reporting, dashboard design, validation thinking, and clear communication for non-technical stakeholders.
+
+## Public repo QA
+
+Run the lightweight public-portfolio contract check before publishing documentation or screenshot updates:
+
+```bash
+python scripts/check_public_repo_contract.py
+```
+
+This check validates local Markdown links and image references, confirms sanitized sample-data fields are documented, checks the public methodology field contract, and scans for obvious credential-style literals.
