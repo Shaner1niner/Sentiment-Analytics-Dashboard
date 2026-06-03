@@ -160,6 +160,7 @@ Sentiment-Analytics-Dashboard/
 |-- screenshots/
 |   |-- README.md
 |   |-- dashboard_overview_public.png
+|   |-- market_context_public.png
 |   `-- mobile_dashboard_public.png
 |-- sql_examples/
 |   `-- sentiment_dashboard_rollup_sample.sql

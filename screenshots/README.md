@@ -10,11 +10,13 @@ No raw screenshots are copied automatically from the source repositories. Before
 | --- | --- | --- |
 | `dashboard_overview_public.png` | New SETA Public Dashboard / NVDA briefing view | Primary README hero screenshot. This is the strongest external-facing visual because it shows the modern product surface: controls, Market Radar, asset briefing cards, structure score, signal state, and sentiment-enhanced technical charting in one view. |
 
-## Additional screenshot candidates
+## Current supporting screenshots and additional candidates
 
 | Target filename | Source view | Why it belongs |
 | --- | --- | --- |
-| `market_radar_context.png` | SETA Public Dashboard Market Radar panel | Shows cross-asset context and product thinking beyond a single chart. |
+| `mobile_dashboard_public.png` | Mobile QA preview | Shows responsive-design review and product QA thinking beyond desktop usage. |
+| `market_context_public.png` | SETA Public Dashboard market context cards | Already referenced by the main README; shows public-safe market-context explanations. |
+| `market_radar_context.png` | Future SETA Public Dashboard Market Radar crop | Optional future crop for cross-asset context beyond a single chart. |
 | `asset_briefing_panel.png` | SETA Public Dashboard asset briefing module | Shows how analytics are translated into explanatory, public-safe context. |
 | `technical_chart_context.png` | SETA Public Dashboard chart section | Shows sentiment-enhanced technical visualization. |
 | `tableau_prototype_aapl.png` | Earlier AAPL Tableau-style dashboard | Shows project evolution and earlier dashboarding capability. |

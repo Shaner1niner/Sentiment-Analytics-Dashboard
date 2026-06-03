@@ -29,8 +29,9 @@ Typical fields:
 
 - `engagement_score`
 - `mention_count`
-- `source_count`
 - `attention_bucket`
+
+Optional production-only field families may include source breadth metrics, but they are intentionally omitted from the sanitized public sample CSVs.
 
 ### Market context
 
@@ -39,9 +40,11 @@ Market data provides context but does not automatically validate sentiment. The 
 Typical fields:
 
 - `close_price`
-- `volume`
+- `volume_index`
 - `return_1d`
 - `volatility_bucket`
+
+For this public repository, the sanitized CSVs and data dictionary are the source of truth for sample field names.
 
 ## Interpretation rules
 
