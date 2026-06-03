@@ -183,3 +183,15 @@ python scripts/check_public_repo_contract.py
 ```
 
 This check validates local Markdown links and image references, confirms sanitized sample-data fields are documented, checks the public methodology field contract, and scans for obvious credential-style literals.
+
+## Reviewer path
+
+For a quick review, start with the dashboard screenshots and 60-second overview. For a deeper technical review, follow the architecture diagram, case study, sanitized data dictionary, SQL sample, and Tableau calculation notes.
+
+Recommended flow:
+
+1. Review the dashboard preview to understand the product surface.
+2. Read the 60-second overview for business context.
+3. Open the architecture diagram to understand the public/private boundary.
+4. Review the sanitized sample data and SQL rollup example.
+5. Read the model-validation and public-safe output notes for governance context.
